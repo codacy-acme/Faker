@@ -14,6 +14,7 @@ class Name
     public function __construct(\Faker\Generator $generator)
     {
         $this->generator = $generator;
+        $generator->weirdMethodThatDoesNotExist();
     }
 
     /**
